@@ -5,6 +5,18 @@ const style = {
   textActive: `font-bold`,
 };
 
-function SidebarOptions({ text, icon, isActive, setSelected }) {
-  return <div></div>;
+function SidebarOptions({ text, Icon, isActive, setSelected }) {
+  return (
+    <div>
+      <div className={style.wrapper} onClick={() => setSelected(text)}>
+        <div className={style.iconContainer}>
+          <Icon />
+        </div>
+        <div className={`${isActive ? style.textActive : style.textGeneral}`}>
+          {text}
+        </div>
+      </div>
+    </div>
+  );
 }
+export default SidebarOptions;

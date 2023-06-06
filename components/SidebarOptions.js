@@ -3,12 +3,8 @@ const style = {
   iconContainer: `text-xl mr-4`,
   textGeneral: `font-medium`,
   textActive: `font-bold`,
-}
+};
 
-function SidebarOptions({text, icon, isActive, setSelected}){
-    return(
-        <div>
-
-        </div>
-    )
+function SidebarOptions({ text, icon, isActive, setSelected }) {
+  return <div></div>;
 }
